@@ -1,5 +1,6 @@
 #! /bin/bash
 
+wget https://raw.githubusercontent.com/hamm80/my/refs/heads/main/logo.png
 VBR="1500k"
 FPS="20"
 QUAL="veryfast"
