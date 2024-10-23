@@ -8,8 +8,6 @@ read -p "YOUR KEY: " CRP
 RTMP_KEY="$CRP"
 read -p "YOUR SOURCE: " CRP
 VIDEO_SOURCE="$CRP"
-AUDIO_SOURCE=""
-AUDIO_ENCODER="aac"
 
 while true; do
 
