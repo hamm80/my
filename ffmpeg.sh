@@ -11,3 +11,5 @@ VIDEO_SOURCE="$CRP"
 
 
 ffmpeg -re -i "$VIDEO_SOURCE" -re -i logo.png  -filter_complex "[1:v]scale=60:60[logo];[0:v][logo]overlay=W-w-20:H-h-20" -c:v libx264 -b:v 3000k -preset veryfast -maxrate 3000k -bufsize 6000k -c:a aac -b:a 128k -f flv $RTMP_URL/$RTMP_KEY 
+
+seq 1 2592000 | while read i; do echo -en "\r Running .     $i s /2592000 s";sleep 0.1;echo -en "\r Running ..    $i s /2592000 s";sleep 0.1;echo -en "\r Running ...   $i s /2592000 s";sleep 0.1;echo -en "\r Running ....  $i s /2592000 s";sleep 0.1;echo -en "\r Running ..... $i s /2592000 s";sleep 0.1;echo -en "\r Running     . $i s /2592000 s";sleep 0.1;echo -en "\r Running  .... $i s /2592000 s";sleep 0.1;echo -en "\r Running   ... $i s /2592000 s";sleep 0.1;echo -en "\r Running    .. $i s /2592000 s";sleep 0.1;echo -en "\r Running     . $i s /2592000 s";sleep 0.1; done
